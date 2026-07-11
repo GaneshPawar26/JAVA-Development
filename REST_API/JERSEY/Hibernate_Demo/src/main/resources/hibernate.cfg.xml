@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<!--<hibernate-configuration>-->
+
+<!--    <session-factory>-->
+
+<!--        &lt;!&ndash; Database Connection &ndash;&gt;-->
+
+<!--        <property name="hibernate.connection.driver_class">-->
+<!--            com.mysql.cj.jdbc.Driver-->
+<!--        </property>-->
+
+<!--        <property name="hibernate.connection.url">-->
+<!--            jdbc:mysql://localhost:3306/hibernate_db-->
+<!--        </property>-->
+
+<!--        <property name="hibernate.connection.username">-->
+<!--            root-->
+<!--        </property>-->
+
+<!--        <property name="hibernate.connection.password">-->
+<!--            Gnp2003@278-->
+<!--        </property>-->
+
+<!--        &lt;!&ndash; SQL Dialect &ndash;&gt;-->
+
+<!--        <property name="hibernate.dialect">-->
+<!--            org.hibernate.dialect.MySQLDialect-->
+<!--        </property>-->
+
+<!--        &lt;!&ndash; Show SQL in Console &ndash;&gt;-->
+
+<!--        <property name="hibernate.show_sql">-->
+<!--            true-->
+<!--        </property>-->
+
+<!--        &lt;!&ndash; Auto Create/Update Tables &ndash;&gt;-->
+
+<!--        <property name="hibernate.hbm2ddl.auto">-->
+<!--            update-->
+<!--        </property>-->
+
+<!--        &lt;!&ndash; Entity Class Mapping &ndash;&gt;-->
+
+<!--        <mapping class="org.ganesh.Alien"/>-->
+
+<!--    </session-factory>-->
+
+<!--</hibernate-configuration>-->
+
+
+<hibernate-configuration>
+    <session-factory>
+<!--        database configuration-->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate_db</property>
+        <property name="hibernate.connection.user">root</property>
+        <property name="hibernate.connection.password">Gnp2003@278</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
+<!--        hibernate configurations-->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property  name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+<!--        xml/class mapping-->
+        <mapping class="org.ganesh.entities.Student"></mapping>
+
+        <mapping class="org.ganesh.entities.Certificates"/>
+    </session-factory>
+</hibernate-configuration>

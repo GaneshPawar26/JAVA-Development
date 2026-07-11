@@ -1,0 +1,4 @@
+2026-07-11 21:42:52,124-org.ganesh.Log4jTest-[process]-(INFO)-From the info method-
+2026-07-11 21:42:52,140-org.ganesh.Log4jTest-[process]-(WARN)-From the warn method-
+2026-07-11 21:42:52,140-org.ganesh.Log4jTest-[process]-(ERROR)-From the error method-
+2026-07-11 21:42:52,140-org.ganesh.Log4jTest-[process]-(FATAL)-From the fatal method-
