@@ -11,6 +11,6 @@ public class StudentController {
     @GetMapping("/")
     public String hello()
     {
-     return "hello student";
+     return "hello student how are you guys";
     }
 }
