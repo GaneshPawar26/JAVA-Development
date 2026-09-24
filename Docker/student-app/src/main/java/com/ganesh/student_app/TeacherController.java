@@ -7,6 +7,6 @@ public class TeacherController {
 
     public String hello()
     {
-        return "cnskcjhjc";
+        return "cnskcj kknjknkhjc";
     }
 }
